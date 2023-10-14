@@ -21,3 +21,16 @@ jobs:
         run: npm run lint
       - name: Check for Type Errors
         run: npm run typecheck
+      - name: Build Project
+        run: npm run build
+      - uses: actions/upload-action@v3
+        with:
+          name: build
+          path: .next/
+      - name: Run Unit Tests
+        run: npm run test
+      - uses: actions/upload-action@v3
+        if: always()
+        with:
+          name: coverage
+          path: coverage/
