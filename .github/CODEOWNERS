@@ -1,0 +1,5 @@
+* @andrewtdinh
+*.js @andrewtdinh
+*.ts @andrewtdinh
+*.tsx @andrewtdinh
+/e2e/ @andrewsodev
