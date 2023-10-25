@@ -7,8 +7,8 @@ export default async function Home() {
   const flags = await flagsmith.getEnvironmentFlags();
   return (
     <main className="main">
-      <div>
-        <h2>Hello World</h2>
+    <div>
+        <h2>Hello World from account 2</h2>
       </div>
       <Link href="/about">About</Link>
       <br />
